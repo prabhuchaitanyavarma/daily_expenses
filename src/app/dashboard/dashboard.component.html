@@ -1,0 +1,21 @@
+<div class="row du-btn-bar">
+	<div class="col">
+    <div class="btn-group" (click)="onButtonGroupClick($event)">
+      <button type="button" class="btn btn-primary" (click)="filterChange('till')">Till Date</button>
+      <button type="button" class="btn btn-primary month-btn" (click)="filterChange('month')">Month</button>
+      <button type="button" class="btn btn-primary" (click)="filterChange('quarter')">Quarter</button>
+      <button type="button" class="btn btn-primary" (click)="filterChange('year')">Year</button>
+    </div>
+    </div>
+</div>
+
+<div class="chart-dv">
+	<fusioncharts
+	    [id]="id"
+	    [width]="width"
+	    [height]="height"
+	    [type]="type"
+	    [dataFormat]="dataFormat"
+	    [dataSource]="dataSource"
+	></fusioncharts>
+</div>
