@@ -12,7 +12,7 @@ export class DataService {
 	headers: any;
 	url: any;
  	constructor(private http: Http) {
- 		this.url = "http://203.193.173.114:3002/api/v1";
+ 		this.url = "https://whispering-earth-17077.herokuapp.com/api/v1";
  	}
 
  	addHeaders(){
