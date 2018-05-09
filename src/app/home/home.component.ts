@@ -34,8 +34,8 @@ export class HomeComponent implements OnInit {
   amountError = false;
   categoryError = false;
   defaultFilter = 'month';
-  private years: number[] =[];
-  private yy : number;
+  years: number[] =[];
+  yy : number;
   month;
   year;
   mm;
