@@ -12,7 +12,7 @@ export class DataService {
 	headers: any;
 	url: any;
  	constructor(private http: Http) {
- 		this.url = "http://localhost:3002/api/v1";
+ 		this.url = "http://203.193.173.114:3002/api/v1";
  	}
 
  	addHeaders(){
