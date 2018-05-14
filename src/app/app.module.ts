@@ -26,7 +26,7 @@ import * as FusionCharts from 'fusioncharts';
 import * as Charts from 'fusioncharts/fusioncharts.charts';
 import * as FintTheme from 'fusioncharts/themes/fusioncharts.theme.fint';
 import { FusionChartsModule } from 'angular4-fusioncharts';
-
+FusionChartsModule.fcRoot(FusionCharts, Charts, FintTheme);
 
 
 @NgModule({
@@ -48,7 +48,7 @@ import { FusionChartsModule } from 'angular4-fusioncharts';
     FormsModule,
     NgbModule.forRoot(),
     AngularFontAwesomeModule,
-    FusionChartsModule.forRoot(FusionCharts, Charts)
+    FusionChartsModule
   ],
   providers: [DataService, HelperMethodsService, AuthGuardService],
   bootstrap: [AppComponent]
